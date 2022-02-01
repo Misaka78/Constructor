@@ -33,14 +33,14 @@
             this.LabelPrize1 = new System.Windows.Forms.Label();
             this.LabelPrize2 = new System.Windows.Forms.Label();
             this.LabelGuarantee = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxSize = new System.Windows.Forms.TextBox();
+            this.textBoxPrize1 = new System.Windows.Forms.TextBox();
+            this.textBoxPrize2 = new System.Windows.Forms.TextBox();
+            this.textBoxGuarantee = new System.Windows.Forms.TextBox();
+            this.textBoxRead = new System.Windows.Forms.TextBox();
+            this.ButtonSetInBuffer = new System.Windows.Forms.Button();
+            this.ButtonWrite = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LabelName
@@ -88,87 +88,88 @@
             this.LabelGuarantee.TabIndex = 4;
             this.LabelGuarantee.Text = "Гарантийный срок";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 22);
-            this.textBox1.TabIndex = 5;
+            this.textBoxName.Location = new System.Drawing.Point(26, 79);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(118, 22);
+            this.textBoxName.TabIndex = 5;
             // 
-            // textBox2
+            // textBoxSize
             // 
-            this.textBox2.Location = new System.Drawing.Point(193, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 22);
-            this.textBox2.TabIndex = 6;
+            this.textBoxSize.Location = new System.Drawing.Point(193, 79);
+            this.textBoxSize.Name = "textBoxSize";
+            this.textBoxSize.Size = new System.Drawing.Size(118, 22);
+            this.textBoxSize.TabIndex = 6;
             // 
-            // textBox3
+            // textBoxPrize1
             // 
-            this.textBox3.Location = new System.Drawing.Point(360, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(118, 22);
-            this.textBox3.TabIndex = 7;
+            this.textBoxPrize1.Location = new System.Drawing.Point(360, 78);
+            this.textBoxPrize1.Name = "textBoxPrize1";
+            this.textBoxPrize1.Size = new System.Drawing.Size(118, 22);
+            this.textBoxPrize1.TabIndex = 7;
             // 
-            // textBox4
+            // textBoxPrize2
             // 
-            this.textBox4.Location = new System.Drawing.Point(527, 78);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(118, 22);
-            this.textBox4.TabIndex = 8;
+            this.textBoxPrize2.Location = new System.Drawing.Point(527, 78);
+            this.textBoxPrize2.Name = "textBoxPrize2";
+            this.textBoxPrize2.Size = new System.Drawing.Size(118, 22);
+            this.textBoxPrize2.TabIndex = 8;
             // 
-            // textBox5
+            // textBoxGuarantee
             // 
-            this.textBox5.Location = new System.Drawing.Point(694, 78);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(118, 22);
-            this.textBox5.TabIndex = 9;
+            this.textBoxGuarantee.Location = new System.Drawing.Point(694, 78);
+            this.textBoxGuarantee.Name = "textBoxGuarantee";
+            this.textBoxGuarantee.Size = new System.Drawing.Size(118, 22);
+            this.textBoxGuarantee.TabIndex = 9;
             // 
-            // textBox6
+            // textBoxRead
             // 
-            this.textBox6.Location = new System.Drawing.Point(28, 185);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(624, 159);
-            this.textBox6.TabIndex = 10;
+            this.textBoxRead.Location = new System.Drawing.Point(28, 185);
+            this.textBoxRead.Multiline = true;
+            this.textBoxRead.Name = "textBoxRead";
+            this.textBoxRead.Size = new System.Drawing.Size(624, 159);
+            this.textBoxRead.TabIndex = 10;
             // 
-            // button1
+            // ButtonSetInBuffer
             // 
-            this.button1.Location = new System.Drawing.Point(37, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 36);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Добавить в буфер";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonSetInBuffer.Location = new System.Drawing.Point(37, 125);
+            this.ButtonSetInBuffer.Name = "ButtonSetInBuffer";
+            this.ButtonSetInBuffer.Size = new System.Drawing.Size(184, 36);
+            this.ButtonSetInBuffer.TabIndex = 11;
+            this.ButtonSetInBuffer.Text = "Добавить в буфер";
+            this.ButtonSetInBuffer.UseVisualStyleBackColor = true;
+            this.ButtonSetInBuffer.Click += new System.EventHandler(this.ButtonSetInBuffer_Click);
             // 
-            // button2
+            // ButtonWrite
             // 
-            this.button2.Location = new System.Drawing.Point(656, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 36);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Запись в файл";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ButtonWrite.Location = new System.Drawing.Point(656, 125);
+            this.ButtonWrite.Name = "ButtonWrite";
+            this.ButtonWrite.Size = new System.Drawing.Size(166, 36);
+            this.ButtonWrite.TabIndex = 12;
+            this.ButtonWrite.Text = "Запись в файл";
+            this.ButtonWrite.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(859, 356);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ButtonWrite);
+            this.Controls.Add(this.ButtonSetInBuffer);
+            this.Controls.Add(this.textBoxRead);
+            this.Controls.Add(this.textBoxGuarantee);
+            this.Controls.Add(this.textBoxPrize2);
+            this.Controls.Add(this.textBoxPrize1);
+            this.Controls.Add(this.textBoxSize);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.LabelGuarantee);
             this.Controls.Add(this.LabelPrize2);
             this.Controls.Add(this.LabelPrize1);
             this.Controls.Add(this.LabelSize);
             this.Controls.Add(this.LabelName);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,14 +182,14 @@
         private System.Windows.Forms.Label LabelPrize1;
         private System.Windows.Forms.Label LabelPrize2;
         private System.Windows.Forms.Label LabelGuarantee;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxSize;
+        private System.Windows.Forms.TextBox textBoxPrize1;
+        private System.Windows.Forms.TextBox textBoxPrize2;
+        private System.Windows.Forms.TextBox textBoxGuarantee;
+        private System.Windows.Forms.TextBox textBoxRead;
+        private System.Windows.Forms.Button ButtonSetInBuffer;
+        private System.Windows.Forms.Button ButtonWrite;
     }
 }
 

@@ -16,6 +16,10 @@ namespace Constructor
         {
             InitializeComponent();
         }
-        
+
+        private void ButtonSetInBuffer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

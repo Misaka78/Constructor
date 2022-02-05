@@ -133,27 +133,36 @@
             // 
             // ButtonSetInBuffer
             // 
-            this.ButtonSetInBuffer.Location = new System.Drawing.Point(37, 125);
+            this.ButtonSetInBuffer.BackColor = System.Drawing.Color.Silver;
+            this.ButtonSetInBuffer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.ButtonSetInBuffer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ButtonSetInBuffer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSetInBuffer.Location = new System.Drawing.Point(28, 125);
             this.ButtonSetInBuffer.Name = "ButtonSetInBuffer";
             this.ButtonSetInBuffer.Size = new System.Drawing.Size(184, 36);
             this.ButtonSetInBuffer.TabIndex = 11;
             this.ButtonSetInBuffer.Text = "Добавить в буфер";
-            this.ButtonSetInBuffer.UseVisualStyleBackColor = true;
+            this.ButtonSetInBuffer.UseVisualStyleBackColor = false;
             this.ButtonSetInBuffer.Click += new System.EventHandler(this.ButtonSetInBuffer_Click);
             // 
             // ButtonWrite
             // 
+            this.ButtonWrite.BackColor = System.Drawing.Color.Silver;
+            this.ButtonWrite.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.ButtonWrite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ButtonWrite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonWrite.Location = new System.Drawing.Point(656, 125);
             this.ButtonWrite.Name = "ButtonWrite";
             this.ButtonWrite.Size = new System.Drawing.Size(166, 36);
             this.ButtonWrite.TabIndex = 12;
             this.ButtonWrite.Text = "Запись в файл";
-            this.ButtonWrite.UseVisualStyleBackColor = true;
+            this.ButtonWrite.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(70)))));
             this.ClientSize = new System.Drawing.Size(859, 356);
             this.Controls.Add(this.ButtonWrite);
             this.Controls.Add(this.ButtonSetInBuffer);
